@@ -1,7 +1,7 @@
 'use strict';
 
 var Alexa = require('alexa-sdk');
-var audioData = require('../Nerdcast.json');
+var audioData = require('./Nerdcast.json');
 var constants = require('./constants');
 
 // Binding audio handlers to PLAY_MODE State since they are expected only in this mode.

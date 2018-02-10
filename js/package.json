@@ -1,23 +1,23 @@
 {
-    "name": "alexa-nerdcast",
-    "version": "1.0.0",
-    "description": "Listen to NerdCasts on your alexa device",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-      "alexa",
-      "skill",
-      "nerdcast"
-    ],
-    "author": "Miguel Targa",
-    "license": "See license in LICENSE.txt",
-    "dependencies": {
-      "alexa-sdk": "^1.0.4"
-    },
-    "repository" : {
-      "type" : "git",
-      "url" : "https://github.com/migueltarga/alexa-nerdcast"
-    }
+  "name": "alexa-nerdcast",
+  "version": "1.0.0",
+  "description": "Listen to NerdCasts on your alexa device",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alexa",
+    "skill",
+    "nerdcast"
+  ],
+  "author": "Miguel Targa",
+  "license": "See license in LICENSE.txt",
+  "dependencies": {
+    "alexa-sdk": "^1.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/migueltarga/alexa-nerdcast"
   }
+}

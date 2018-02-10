@@ -1,7 +1,7 @@
 {
   "intents": [
     {
-      "intent": "PlayAudio"
+      "intent": "NerdCast"
     },
     {
       "intent": "AMAZON.PauseIntent"

@@ -1,7 +1,7 @@
 'use strict';
 
 var Alexa = require('alexa-sdk');
-var audioData = require('../Nerdcast.json');
+var audioData = require('./Nerdcast.json');
 var constants = require('./constants');
 
 var stateHandlers = {
@@ -20,13 +20,13 @@ var stateHandlers = {
             //  Change state to START_MODE
             this.handler.state = constants.states.START_MODE;
 
-            var message = 'Welcome to Nerd Cast. You can say, play the audio to begin the podcast.';
-            var reprompt = 'You can say, play the audio, to begin.';
+            var message = 'Welcome to Nerd Cast. You can say, play podcast to listen to NerdCast.';
+            var reprompt = 'You can say, play podcast, to begin.';
 
             this.response.speak(message).listen(reprompt);
             this.emit(':responseReady');
         },
-        'PlayAudio' : function () {
+        'NerdCast' : function () {
             if (!this.attributes['playOrder']) {
                 // Initialize Attributes if undefined.
                 this.attributes['playOrder'] = Array.apply(null, {length: audioData.episodes.length}).map(Number.call, Number);
@@ -41,7 +41,7 @@ var stateHandlers = {
             controller.play.call(this);
         },
         'AMAZON.HelpIntent' : function () {
-            var message = 'Welcome to the Nerd Cast. You can say, play the audio, to begin the podcast.';
+            var message = 'Welcome to the Nerd Cast. You can say, play podcast to listen to NerdCast.';
             this.response.speak(message).listen(message);
             this.emit(':responseReady');
         },
@@ -59,7 +59,7 @@ var stateHandlers = {
             // No session ended logic
         },
         'Unhandled' : function () {
-            var message = 'Sorry, I could not understand. Please say, play the audio, to begin the audio.';
+            var message = 'Sorry, I could not understand. Please say, play podcast to listen to NerdCast.';
             this.response.speak(message).listen(message);
             this.emit(':responseReady');
         }
@@ -82,8 +82,8 @@ var stateHandlers = {
             var reprompt;
             if (this.attributes['playbackFinished']) {
                 this.handler.state = constants.states.START_MODE;
-                message = 'Welcome to the Nerd Cast. You can say, play the audio to begin the podcast.';
-                reprompt = 'You can say, play the audio, to begin.';
+                message = 'Welcome to the Nerd Cast. You can say, play podcast to listen to NerdCast.';
+                reprompt = 'You can say, play podcast, to begin.';
             } else {
                 this.handler.state = constants.states.RESUME_DECISION_MODE;
                 message = 'You were listening to ' + audioData.episodes[this.attributes['playOrder'][this.attributes['index']]].category

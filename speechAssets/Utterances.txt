@@ -1,15 +1,15 @@
-Nerdcast begin podcast
-Nerdcast begin the podcast
-Nerdcast begin playing the podcast
-Nerdcast start podcast
-Nerdcast start the podcast
-Nerdcast start playing the podcast
-Nerdcast play the podcast
-Nerdcast to play
-Nerdcast to begin podcast
-Nerdcast to begin the podcast
-Nerdcast to begin playing the podcast
-Nerdcast to start podcast
-Nerdcast to start the podcast
-Nerdcast to start playing the podcast
-Nerdcast to play the podcast
+NerdCast begin podcast
+NerdCast begin the podcast
+NerdCast begin playing the podcast
+NerdCast start podcast
+NerdCast start the podcast
+NerdCast start playing the podcast
+NerdCast play the podcast
+NerdCast to play
+NerdCast to begin podcast
+NerdCast to begin the podcast
+NerdCast to begin playing the podcast
+NerdCast to start podcast
+NerdCast to start the podcast
+NerdCast to start playing the podcast
+NerdCast to play the podcast
